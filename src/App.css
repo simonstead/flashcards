@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Title {
+  color: white;
+  border-bottom: 1px solid white;
+  width: 10em;
+  margin: 1em auto;
+}
+
+.Flashcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  height: 60vh;
+}
+
+.English,
+.Spanish {
+  border: 1px solid #efefef;
+  width: 15em;
+  height: 15em;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 1px 1px 1px 0px;
+  background-color: white;
+}
+
+.Rank {
+  flex-grow: 1;
+}
+
+.Word {
+  flex-grow: 2;
+}
+
+.Button {
+  box-shadow: 1px 1px 1px 0px;
+  padding: 1em;
+  width: 6em;
+  border-radius: 0.5em;
+  margin: 2em auto;
+  cursor: pointer;
+  background-color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .Flashcard {
+    flex-direction: row;
+  }
+}
